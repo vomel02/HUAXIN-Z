@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HUAXIN Membrane — Seawater Desalination RO Elements | Field-Proven SWRO Performance</title>
+<meta name="description" content="HUAXIN HX-SW seawater RO elements: 99.7% stable salt rejection, +0.8 kg vs +22.4 kg scale gain, 693-day field validation, ACWA Power strategic cooperation. Tsinghua PhD team, 10M+ m²/yr capacity.">
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/echarts@5/dist/echarts.min.js"></script>
+<style>
+/* ============ BASE ============ */
+:root{
+  --navy:#081C36; --navy2:#0A2344; --navy3:#0C2950;
+  --ink:#0F2239; --text:#33475E; --muted:#5B7188;
+  --blue:#1E7BE0; --purple:#6C4DF6; --teal:#00BFA5; --tealD:#0B7C6C;
+  --red:#E5484D; --amber:#FFB020;
+  --grad:linear-gradient(120deg,#1E7BE0,#6C4DF6);
+  --bg:#F6F9FC; --card:#fff; --line:#E3EBF3;
+  --shadow:0 10px 30px rgba(9,38,66,.08);
+  --mono:'IBM Plex Mono',monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'IBM Plex Sans',system-ui,sans-serif;color:var(--text);background:#fff;line-height:1.6;-webkit-font-smoothing:antialiased}
+::selection{background:rgba(30,123,224,.25)}
+img,svg{display:block;max-width:100%}
+section{padding:92px 0;scroll-margin-top:80px}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.sec-gray{background:var(--bg)}
+.dark{background:linear-gradient(180deg,var(--navy),var(--navy3));color:#DCE7F3}
+.dark .kicker{color:#5EEAD4}
+.dark h2.sec{color:#fff}
+.dark .lead{color:#A9BDD4}
+.kicker{font-family:var(--mono);font-size:12px;letter-spacing:.22em;text-transform:uppercase;color:var(--blue);font-weight:600}
+h2.sec{font-size:clamp(28px,4vw,40px);color:var(--ink);font-weight:700;margin:12px 0 14px;letter-spacing:-.01em;line-height:1.15}
+.lead{color:var(--muted);font-size:17px;max-width:780px;line-height:1.7}
+.sec-head{margin-bottom:44px}
+.mono{font-family:var(--mono)}
+.hidden{display:none!important}
+
+/* ============ BUTTONS ============ */
+.btn{display:inline-flex;align-items:center;gap:9px;padding:13px 26px;border-radius:11px;font-weight:600;font-size:15px;cursor:pointer;border:none;transition:.25s;text-decoration:none;font-family:inherit}
+.btn svg{width:17px;height:17px}
+.btn-p{background:var(--grad);color:#fff;box-shadow:0 8px 22px rgba(72,88,240,.35)}
+.btn-p:hover{transform:translateY(-2px);box-shadow:0 14px 28px rgba(72,88,240,.45)}
+.btn-g{background:transparent;border:1.5px solid rgba(255,255,255,.4);color:#fff}
+.btn-g:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+.btn-o{border:1.5px solid var(--line);color:var(--ink);background:#fff}
+.btn-o:hover{border-color:var(--blue);color:var(--blue)}
+.btn-sm{padding:9px 18px;font-size:13.5px;border-radius:9px}
+
+/* ============ NAV ============ */
+.nav{position:fixed;top:0;left:0;right:0;z-index:200;background:rgba(255,255,255,.93);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);transition:box-shadow .3s}
+.nav.scrolled{box-shadow:0 8px 24px rgba(9,38,66,.09)}
+.nav-in{max-width:1180px;margin:0 auto;padding:0 24px;height:68px;display:flex;align-items:center;gap:24px}
+.brand{display:flex;align-items:center;gap:11px;text-decoration:none}
+.brand-t b{display:block;color:var(--ink);font-size:18px;font-weight:700;letter-spacing:.06em;line-height:1}
+.brand-t small{display:block;font-size:9.5px;letter-spacing:.16em;color:var(--muted);font-weight:600;margin-top:3px;text-transform:uppercase}
+.nav-links{display:flex;gap:2px;margin-left:auto}
+.nav-links a{padding:8px 12px;border-radius:8px;color:var(--text);font-size:14px;font-weight:500;text-decoration:none;transition:.2s}
+.nav-links a:hover{background:#EFF4FA;color:var(--ink)}
+.nav-links a.active{color:var(--blue);font-weight:600}
+.burger{display:none;margin-left:auto;background:none;border:none;cursor:pointer;padding:8px}
+.burger span{display:block;width:22px;height:2.5px;background:var(--ink);margin:5px 0;border-radius:2px;transition:.3s}
+
+/* ============ HERO ============ */
+.hero{position:relative;color:#fff;padding:158px 0 170px;overflow:hidden;
+  background:radial-gradient(1100px 560px at 88% -10%,rgba(108,77,246,.30),transparent 60%),
+             radial-gradient(900px 500px at -8% 25%,rgba(30,123,224,.32),transparent 55%),
+             linear-gradient(160deg,#07182F,#0A2344 55%,#0B2A50)}
+.hero::before{content:'';position:absolute;inset:0;background-image:radial-gradient(rgba(255,255,255,.05) 1px,transparent 1px);background-size:28px 28px;pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.08fr .92fr;gap:44px;align-items:center;position:relative;z-index:2}
+.hero h1{font-size:clamp(34px,4.6vw,55px);line-height:1.07;font-weight:700;letter-spacing:-.015em;margin:18px 0 20px}
+.hero h1 em{font-style:normal;background:linear-gradient(95deg,#5EEAD4,#7DD3FC 55%,#B7A6FF);-webkit-background-clip:text;background-clip:text;color:transparent}
+.hero-sub{font-size:17px;color:#B7C9DE;max-width:600px;line-height:1.7}
+.chips{display:flex;flex-wrap:wrap;gap:9px;margin:24px 0 30px}
+.chip{display:inline-flex;align-items:center;gap:8px;padding:7px 14px;border-radius:999px;border:1px solid rgba(255,255,255,.22);background:rgba(255,255,255,.07);font-size:13px;font-weight:600;color:#EAF2FB}
+.chip i{width:7px;height:7px;border-radius:50%;background:var(--teal);flex:none;box-shadow:0 0 8px rgba(0,191,165,.9)}
+.hero-btns{display:flex;gap:13px;flex-wrap:wrap}
+.hstats{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:52px;position:relative;z-index:2}
+.hstat{background:rgba(255,255,255,.055);border:1px solid rgba(255,255,255,.13);border-radius:15px;padding:19px 18px;backdrop-filter:blur(6px)}
+.hnum{font-family:var(--mono);font-size:29px;font-weight:600;color:#fff;letter-spacing:-.01em}
+.hnum .unit{font-size:17px;color:#5EEAD4;margin-left:2px}
+.hlab{font-size:12.5px;color:#9DB2CC;margin-top:7px;line-height:1.45}
+.hlab em{font-style:normal;color:#5EEAD4;display:block;font-size:11.5px;margin-top:3px}
+/* element visual */
+.hero-vis{position:relative;display:flex;justify-content:center}
+.elvis{width:min(360px,80%);animation:float 7s ease-in-out infinite;filter:drop-shadow(0 30px 40px rgba(0,0,0,.35))}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-16px)}}
+.fchip{position:absolute;display:flex;align-items:center;gap:8px;background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.22);backdrop-filter:blur(10px);padding:9px 14px;border-radius:12px;font-size:12.5px;font-weight:600;color:#fff;animation:float 6s ease-in-out infinite}
+.fchip b{font-family:var(--mono);color:#5EEAD4}
+.fc1{top:6%;left:-2%;animation-delay:.8s}
+.fc2{top:44%;right:-3%;animation-delay:1.6s}
+.fc3{bottom:9%;left:2%;animation-delay:2.4s}
+.waves{position:absolute;left:0;right:0;bottom:-2px;height:120px;overflow:hidden;z-index:1}
+.wave{position:absolute;bottom:0;left:0;width:200%;height:100%;animation:drift 20s linear infinite}
+.wave.w2{animation-duration:31s;opacity:.55;bottom:-16px}
+@keyframes drift{to{transform:translateX(-50%)}}
+
+/* ============ TRUST BAR ============ */
+.trust{background:#0A2344;padding:20px 0;border-top:1px solid rgba(255,255,255,.07)}
+.trust-in{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:8px 26px}
+.trust-in span{font-family:var(--mono);font-size:11px;letter-spacing:.14em;color:#8FA6C0;font-weight:500;text-transform:uppercase}
+.trust-in span.hot{color:#fff}
+.trust-in .dot{color:#3E5B80;font-size:14px}
+
+/* ============ PROBLEM ============ */
+.pgrid5{display:grid;grid-template-columns:repeat(auto-fit,minmax(330px,1fr));gap:16px}
+.pcard5{background:#fff;border:1px solid var(--line);border-radius:16px;padding:24px;box-shadow:var(--shadow);transition:.25s}
+.pcard5:hover{transform:translateY(-4px);box-shadow:0 16px 36px rgba(9,38,66,.12)}
+.pnum{font-family:var(--mono);font-size:15px;font-weight:600;background:var(--grad);-webkit-background-clip:text;background-clip:text;color:transparent;letter-spacing:.08em}
+.pcard5 h3{font-size:17.5px;color:var(--ink);margin:8px 0 8px}
+.pcard5 p{font-size:14px;color:var(--muted);line-height:1.6}
+.psol{margin-top:15px;padding-top:13px;border-top:1px dashed var(--line);font-size:13.5px;color:var(--tealD);line-height:1.55}
+.psol b{font-weight:700}
+.psol svg{width:14px;height:14px;vertical-align:-2px;margin-right:4px}
+.prob-banner{margin-top:26px;background:linear-gradient(120deg,#0A2344,#123B71);border-radius:18px;padding:28px 32px;display:grid;grid-template-columns:1fr 1fr 2fr;gap:24px;align-items:center;color:#fff}
+.pb-num{font-family:var(--mono);font-size:34px;font-weight:600}
+.pb-num small{display:block;font-size:12px;color:#9DB2CC;font-family:'IBM Plex Sans';font-weight:500;margin-top:2px}
+.pb-num.bad{color:#FF8A8E}
+.pb-txt{font-size:14.5px;color:#C7D6E8;line-height:1.65;border-left:1px solid rgba(255,255,255,.15);padding-left:24px}
+.pb-txt b{color:#5EEAD4}
+
+/* ============ PERFORMANCE / CHARTS ============ */
+.perf-grid{display:grid;grid-template-columns:1.42fr 1fr;gap:20px}
+.perf-grid2{display:grid;grid-template-columns:1fr 1.42fr;gap:20px;margin-top:20px}
+.chartcard{background:#fff;border:1px solid var(--line);border-radius:16px;padding:20px 20px 12px;box-shadow:var(--shadow)}
+.ct-h{margin-bottom:6px}
+.ct-h h4{font-size:16px;color:var(--ink)}
+.ct-h .ct-s{font-size:12.5px;color:var(--muted)}
+.ch{width:100%}
+#chA{height:335px}#chB{height:335px}#chC{height:300px}
+table.score{width:100%;border-collapse:collapse;font-size:13.5px}
+table.score th{text-align:left;font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);font-weight:600;padding:10px 10px;border-bottom:2px solid var(--blue)}
+table.score td{padding:12px 10px;border-bottom:1px solid var(--line);vertical-align:middle}
+table.score td b{color:var(--ink);font-size:13.5px;display:block}
+table.score td small{color:var(--muted);font-size:11.5px}
+table.score td.num{font-family:var(--mono);font-weight:600;text-align:center;color:#5B7188;white-space:nowrap}
+table.score td.num.hx{color:var(--tealD)}
+table.score td.num.fail{color:var(--red)}
+.badge{display:inline-block;padding:3px 10px;border-radius:20px;font-size:11px;font-weight:700;white-space:nowrap}
+.badge.win{background:rgba(0,191,165,.12);color:var(--tealD);border:1px solid rgba(0,191,165,.5)}
+.badge.par{background:#F1F5F9;color:#64748B;border:1px solid #CBD5E1}
+.score-note{font-size:12.5px;color:var(--muted);margin:12px 2px 6px;line-height:1.6}
+
+/* ============ CASES ============ */
+.ctabs{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:30px}
+.ctab{padding:10px 19px;border-radius:999px;border:1px solid rgba(255,255,255,.25);background:transparent;color:#C7D6E8;font-weight:600;font-size:14px;cursor:pointer;transition:.25s;font-family:inherit}
+.ctab:hover{border-color:rgba(255,255,255,.55)}
+.ctab.on{background:var(--grad);border-color:transparent;color:#fff;box-shadow:0 8px 20px rgba(72,88,240,.4)}
+.case{animation:fadeUp .5s ease}
+@keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+.case-k{font-family:var(--mono);font-size:12px;letter-spacing:.2em;color:#5EEAD4;text-transform:uppercase;font-weight:600}
+.case-d{font-size:13px;color:#8FA6C0;margin-top:5px}
+.case h3{font-size:clamp(21px,2.6vw,27px);color:#fff;margin:10px 0 14px;letter-spacing:-.01em}
+.case-ch{font-size:15px;color:#B7C9DE;max-width:860px;line-height:1.7}
+.cmets{display:grid;grid-template-columns:repeat(4,1fr);gap:13px;margin:26px 0}
+.cmet{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.13);border-radius:14px;padding:17px}
+.cmet b{display:block;font-family:var(--mono);font-size:21px;color:#5EEAD4;font-weight:600;letter-spacing:-.01em}
+.cmet span{display:block;font-size:12.5px;color:#9DB2CC;margin-top:5px;line-height:1.45}
+.case-note{border-left:3px solid var(--teal);background:rgba(0,191,165,.08);border-radius:0 12px 12px 0;padding:15px 20px;font-size:14px;color:#CFF5EC;line-height:1.65}
+
+/* ============ PRODUCTS ============ */
+.prod-head{display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap}
+.ptabs{display:flex;gap:8px;overflow-x:auto;padding:4px 2px 10px;margin:30px 0 22px;scrollbar-width:thin}
+.ptab{flex:none;padding:10px 17px;border-radius:12px;border:1px solid var(--line);background:#fff;cursor:pointer;font-weight:700;font-size:14.5px;color:var(--text);transition:.25s;text-align:left;font-family:inherit}
+.ptab span{display:block;font-size:11px;color:var(--muted);font-weight:500;margin-top:1px}
+.ptab:hover{border-color:var(--blue)}
+.ptab.on{background:var(--grad);color:#fff;border-color:transparent;box-shadow:0 8px 20px rgba(72,88,240,.35)}
+.ptab.on span{color:rgba(255,255,255,.85)}
+.pgrid{display:grid;grid-template-columns:1fr 1.15fr;gap:20px;animation:fadeUp .45s ease}
+.pcard{background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px;box-shadow:var(--shadow)}
+.ptop{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+.pname{font-family:var(--mono);font-weight:600;font-size:19px;color:var(--ink)}
+.plabel{font-size:12px;font-weight:600;color:var(--blue);background:rgba(30,123,224,.1);padding:3px 11px;border-radius:20px}
+.flag{background:var(--amber);color:#3A2A00;font-size:10px;font-weight:700;letter-spacing:.1em;padding:3px 9px;border-radius:6px}
+.pcard h3{font-size:19px;color:var(--ink);margin-bottom:10px;line-height:1.35}
+.pdesc{font-size:14.5px;color:var(--muted);line-height:1.7}
+.pfeat{list-style:none;margin:18px 0}
+.pfeat li{display:flex;gap:10px;font-size:14px;color:var(--text);padding:6px 0;line-height:1.5}
+.pfeat svg{width:16px;height:16px;color:var(--tealD);flex:none;margin-top:3px}
+.papps{font-size:13px;color:var(--muted);line-height:1.6}
+.papps b{color:var(--ink)}
+.pchip{display:inline-block;background:#F1F6FB;border:1px solid var(--line);border-radius:20px;padding:2px 11px;font-size:12px;color:var(--text);margin:3px 3px 0 0}
+.spec{width:100%;border-collapse:collapse;margin:8px 0 4px}
+.spec th{background:var(--grad);color:#fff;font-size:11.5px;padding:9px 10px;text-align:left;font-weight:600;letter-spacing:.03em}
+.spec td{padding:9px 10px;font-size:13.5px;border-bottom:1px solid #EEF3F8;color:var(--text)}
+.spec tr:nth-child(even) td{background:#F8FAFD}
+.spec td.rej{color:var(--blue);font-weight:700}
+.spec tr.hot td{background:#FFF8E8}
+.hotb{background:var(--amber);color:#3A2A00;font-size:9px;font-weight:700;padding:2px 7px;border-radius:5px;margin-left:7px;letter-spacing:.06em;vertical-align:1px}
+.tnote{font-size:11.5px;color:var(--muted);margin:6px 0 18px;line-height:1.55}
+.spec-card h4{font-size:14px;color:var(--ink);margin:16px 0 8px;text-transform:uppercase;letter-spacing:.08em;font-family:var(--mono);font-weight:600}
+.cond{display:grid;grid-template-columns:repeat(4,1fr);gap:8px}
+.cond-i{background:#F6F9FC;border:1px solid var(--line);border-radius:10px;padding:10px 11px}
+.cond-i span{display:block;font-size:10px;color:var(--muted);text-transform:uppercase;letter-spacing:.05em;line-height:1.35}
+.cond-i b{font-size:12.5px;color:var(--ink);font-weight:600}
+.mbr{display:flex;flex-wrap:wrap;gap:7px;margin:6px 0 4px}
+.mbr span{background:#F1F6FB;border:1px solid var(--line);border-radius:8px;padding:5px 10px;font-size:12px;font-family:var(--mono);color:var(--text)}
+
+/* ============ WIZARD ============ */
+.wiz{background:#fff;border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);padding:36px;max-width:880px;margin:0 auto}
+.wsteps{display:flex;justify-content:center;gap:46px;position:relative;margin-bottom:34px}
+.wsteps::before{content:'';position:absolute;top:17px;left:16%;right:16%;height:2px;background:var(--line)}
+.wstep{display:flex;flex-direction:column;align-items:center;gap:7px;position:relative;text-align:center}
+.wstep span{width:36px;height:36px;border-radius:50%;background:#fff;border:2px solid var(--line);color:#93A7BC;font-weight:700;font-size:14px;display:flex;align-items:center;justify-content:center;font-family:var(--mono);position:relative;z-index:1;transition:.3s}
+.wstep em{font-style:normal;font-size:12px;color:var(--muted);font-weight:600}
+.wstep.on span{border-color:var(--blue);color:var(--blue);box-shadow:0 0 0 4px rgba(30,123,224,.15)}
+.wstep.on em{color:var(--blue)}
+.wstep.done span{background:var(--teal);border-color:var(--teal);color:#fff}
+.wstep.done em{color:var(--tealD)}
+.wq{font-size:20px;color:var(--ink);margin-bottom:20px;text-align:center}
+.wopts{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:13px}
+.wopt{background:#fff;border:1.5px solid var(--line);border-radius:14px;padding:17px 18px;text-align:left;cursor:pointer;transition:.22s;font-family:inherit}
+.wopt:hover{border-color:var(--blue);transform:translateY(-2px);box-shadow:0 10px 24px rgba(30,123,224,.14)}
+.wopt b{display:block;font-size:14.5px;color:var(--ink);margin-bottom:4px}
+.wopt span{font-size:12.5px;color:var(--muted);line-height:1.5;display:block}
+.wback{margin-top:18px;background:none;border:none;color:var(--muted);font-weight:600;cursor:pointer;font-size:14px;font-family:inherit}
+.wback:hover{color:var(--blue)}
+.res{animation:fadeUp .5s ease}
+.res-k{font-family:var(--mono);font-size:11px;letter-spacing:.2em;color:var(--tealD);font-weight:600}
+.res h3{font-family:var(--mono);font-size:clamp(22px,3vw,30px);color:var(--ink);margin:8px 0 4px;letter-spacing:-.01em}
+.res-sub{font-size:14px;color:var(--muted);margin-bottom:18px}
+.res-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-bottom:18px}
+.res-grid>div{background:#F6F9FC;border:1px solid var(--line);border-radius:12px;padding:13px 14px}
+.res-grid span{display:block;font-size:10.5px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:4px}
+.res-grid b{font-size:14px;color:var(--ink)}
+.res-grid b.small{font-size:11.5px;font-weight:600;line-height:1.4;display:block}
+.res-feat{list-style:none;margin:0 0 20px}
+.res-feat li{display:flex;gap:9px;font-size:13.5px;color:var(--text);padding:4px 0}
+.res-feat svg{width:15px;height:15px;color:var(--tealD);flex:none;margin-top:3px}
+.res-btns{display:flex;gap:12px;flex-wrap:wrap}
+
+/* ============ ROI ============ */
+.roi-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:44px;align-items:center}
+.roi-basis{list-style:none;margin-top:22px}
+.roi-basis li{display:flex;gap:11px;padding:9px 0;font-size:14.5px;color:#B7C9DE;line-height:1.6}
+.roi-basis svg{width:17px;height:17px;color:#5EEAD4;flex:none;margin-top:3px}
+.roi-basis b{color:#fff}
+.roi-card{background:#fff;border-radius:20px;padding:28px;box-shadow:0 24px 60px rgba(0,0,0,.35)}
+.rrow{margin-bottom:20px}
+.rrow label{display:flex;justify-content:space-between;font-size:13.5px;font-weight:600;color:var(--ink);margin-bottom:10px}
+.rrow label b{font-family:var(--mono);color:var(--blue);font-weight:600}
+input[type=range]{-webkit-appearance:none;appearance:none;width:100%;height:6px;border-radius:3px;background:linear-gradient(90deg,var(--blue),var(--purple));outline:none;cursor:pointer}
+input[type=range]::-webkit-slider-thumb{-webkit-appearance:none;width:20px;height:20px;border-radius:50%;background:#fff;border:3.5px solid var(--blue);box-shadow:0 2px 8px rgba(9,38,66,.3);cursor:pointer}
+input[type=range]::-moz-range-thumb{width:16px;height:16px;border-radius:50%;background:#fff;border:3.5px solid var(--blue);cursor:pointer}
+.routs{border-top:1px solid var(--line);padding-top:8px;margin-top:4px}
+.rout{display:flex;justify-content:space-between;align-items:center;gap:14px;padding:11px 2px;border-bottom:1px dashed var(--line);font-size:13.5px;color:var(--muted)}
+.rout b{font-family:var(--mono);font-size:17px;color:var(--ink);white-space:nowrap}
+.rout.tot{background:linear-gradient(120deg,rgba(0,191,165,.12),rgba(30,123,224,.1));border:1px solid rgba(0,191,165,.35);border-radius:12px;padding:14px 16px;margin-top:12px;color:var(--tealD);font-weight:600;border-bottom:1px solid rgba(0,191,165,.35)}
+.rout.tot b{font-size:23px;color:var(--tealD)}
+.rout5{display:flex;justify-content:space-between;align-items:center;padding:12px 4px 0;font-size:13px;color:var(--muted)}
+.rout5 b{font-family:var(--mono);font-size:16px;color:var(--purple)}
+.rdisc{font-size:11.5px;color:var(--muted);margin-top:14px;line-height:1.6}
+
+/* ============ ABOUT ============ */
+.about-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:52px;align-items:start}
+.astats{display:grid;grid-template-columns:repeat(2,1fr);gap:13px;margin-top:26px}
+.astat{background:#fff;border:1px solid var(--line);border-radius:14px;padding:17px;box-shadow:var(--shadow)}
+.astat b{display:block;font-family:var(--mono);font-size:22px;color:var(--ink)}
+.astat b i{font-style:normal;color:var(--blue)}
+.astat span{font-size:12.5px;color:var(--muted)}
+.tl{position:relative;padding-left:26px;border-left:2px solid var(--line);margin-top:8px}
+.tl-item{position:relative;padding:0 0 26px 20px}
+.tl-item:last-child{padding-bottom:0}
+.tl-item::before{content:'';position:absolute;left:-33px;top:5px;width:12px;height:12px;border-radius:50%;background:var(--grad);box-shadow:0 0 0 4px #fff,0 0 0 5px var(--line)}
+.tl-year{font-family:var(--mono);color:var(--purple);font-weight:600;font-size:13px;letter-spacing:.06em}
+.tl-item h4{font-size:15.5px;color:var(--ink);margin:3px 0 4px}
+.tl-item p{font-size:13.5px;color:var(--muted);line-height:1.6}
+
+/* ============ FAQ ============ */
+.faq-wrap{max-width:860px;margin:0 auto}
+.faq-item{background:#fff;border:1px solid var(--line);border-radius:14px;margin-bottom:12px;overflow:hidden;box-shadow:var(--shadow)}
+.faq-q{width:100%;display:flex;justify-content:space-between;align-items:center;gap:16px;background:none;border:none;padding:19px 22px;font-size:15.5px;font-weight:600;color:var(--ink);cursor:pointer;text-align:left;font-family:inherit}
+.faq-q svg{width:18px;height:18px;color:var(--blue);flex:none;transition:.3s}
+.faq-item.open .faq-q svg{transform:rotate(180deg)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
+.faq-a p{padding:0 22px 20px;font-size:14px;color:var(--muted);line-height:1.7}
+
+/* ============ CONTACT ============ */
+.c-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:40px;align-items:start}
+.citem{display:flex;gap:14px;padding:15px 0;border-bottom:1px solid rgba(255,255,255,.09)}
+.citem svg{width:19px;height:19px;color:#5EEAD4;flex:none;margin-top:3px}
+.citem b{display:block;color:#fff;font-size:14px;font-weight:600}
+.citem span{font-size:13.5px;color:#9DB2CC;line-height:1.55}
+.citem a{color:#BFD6F2;text-decoration:none}
+.citem a:hover{color:#fff}
+.cform{background:#fff;border-radius:20px;padding:30px;box-shadow:0 24px 60px rgba(0,0,0,.35)}
+.cform h3{color:var(--ink);font-size:20px;margin-bottom:4px}
+.cform>p{font-size:13.5px;color:var(--muted);margin-bottom:20px}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:13px;margin-bottom:13px}
+.fin{width:100%;padding:12px 14px;border:1.5px solid var(--line);border-radius:10px;font:inherit;font-size:14px;color:var(--ink);background:#fff;transition:.2s}
+.fin:focus{outline:none;border-color:var(--blue);box-shadow:0 0 0 3px rgba(30,123,224,.15)}
+.fin.mw{margin-bottom:13px}
+textarea.fin{resize:vertical;min-height:104px}
+.fnote{font-size:12px;color:var(--muted);margin-top:12px}
+
+/* ============ FOOTER / MISC ============ */
+footer{background:#050F1F;color:#7E93AC;padding:56px 0 30px}
+.f-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;margin-bottom:38px}
+.f-grid h5{color:#fff;font-size:13px;text-transform:uppercase;letter-spacing:.14em;margin-bottom:14px;font-family:var(--mono);font-weight:600}
+.f-grid a{display:block;color:#7E93AC;text-decoration:none;font-size:13.5px;padding:4px 0}
+.f-grid a:hover{color:#fff}
+.f-brand p{font-size:13.5px;line-height:1.7;max-width:340px;margin-top:14px}
+.f-bot{border-top:1px solid rgba(255,255,255,.08);padding-top:22px;display:flex;justify-content:space-between;gap:14px;flex-wrap:wrap;font-size:12px;color:#5E7189}
+#toTop{position:fixed;right:24px;bottom:24px;width:46px;height:46px;border-radius:50%;background:var(--grad);color:#fff;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 10px 26px rgba(72,88,240,.45);opacity:0;pointer-events:none;transition:.3s;z-index:150}
+#toTop.show{opacity:1;pointer-events:auto}
+#toTop svg{width:20px;height:20px}
+#toast{position:fixed;bottom:28px;left:50%;transform:translate(-50%,90px);background:var(--ink);color:#fff;padding:14px 24px;border-radius:12px;font-size:14px;font-weight:500;box-shadow:0 14px 40px rgba(0,0,0,.35);transition:.4s cubic-bezier(.2,.9,.3,1.2);opacity:0;z-index:400;max-width:90vw;text-align:center}
+#toast.show{transform:translate(-50%,0);opacity:1}
+.rv{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease;transition-delay:var(--d,0s)}
+.rv.in{opacity:1;transform:none}
+
+/* ============ RESPONSIVE ============ */
+@media(max-width:1024px){
+  .hero-grid{grid-template-columns:1fr;gap:24px}
+  .hero-vis{display:none}
+  .hstats{grid-template-columns:repeat(2,1fr)}
+  .perf-grid,.perf-grid2,.pgrid,.roi-grid,.about-grid,.c-grid{grid-template-columns:1fr}
+  .cmets{grid-template-columns:repeat(2,1fr)}
+  .prob-banner{grid-template-columns:1fr;padding:24px}
+  .pb-txt{border-left:none;padding-left:0;border-top:1px solid rgba(255,255,255,.15);padding-top:16px}
+  .res-grid,.cond{grid-template-columns:repeat(2,1fr)}
+  section{padding:70px 0}
+}
+@media(max-width:860px){
+  .nav-links{position:fixed;top:68px;left:0;right:0;background:#fff;flex-direction:column;padding:14px 20px 20px;gap:4px;border-bottom:1px solid var(--line);box-shadow:0 20px 40px rgba(9,38,66,.15);display:none}
+  .nav-links.open{display:flex}
+  .nav-links .btn{margin-top:10px;justify-content:center}
+  .burger{display:block}
+  .nav-cta{display:none}
+  .f-grid{grid-template-columns:1fr;gap:28px}
+  .frow{grid-template-columns:1fr}
+  .wsteps{gap:14px}
+  .wstep em{font-size:10.5px}
+}
+@media(max-width:560px){.hstats{grid-template-columns:1fr}.cmets{grid-template-columns:1fr}.res-grid{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+
+<!-- ================= NAV ================= -->
+<nav class="nav" id="navbar">
+  <div class="nav-in">
+    <a class="brand" href="#home" aria-label="HUAXIN home">
+      <svg width="40" height="40" viewBox="0 0 40 40" aria-hidden="true">
+        <defs><linearGradient id="lg1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#2B7BE4"/><stop offset="1" stop-color="#6C4DF6"/></linearGradient></defs>
+        <circle cx="20" cy="20" r="19" fill="url(#lg1)"/>
+        <path d="M7 17c4.3-4.2 8.7-4.2 13 0s8.7 4.2 13 0" stroke="#fff" stroke-width="2.3" fill="none" stroke-linecap="round" opacity=".9"/>
+        <path d="M9 24c3.7-3.4 7.3-3.4 11 0s7.3 3.4 11 0" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" opacity=".55"/>
+        <path d="M12 11.5c2.7-2.6 5.3-2.6 8 0" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" opacity=".35"/>
+      </svg>
+      <span class="brand-t"><b>HUAXIN</b><small>Innovation for water</small></span>
+    </a>
+    <div class="nav-links" id="navLinks">
+      <a href="#performance">Field Data</a>
+      <a href="#cases">Cases</a>
+      <a href="#products">Products</a>
+      <a href="#selector">Selector</a>
+      <a href="#roi">Savings</a>
+      <a href="#about">Company</a>
+      <a href="#contact">Contact</a>
+      <a href="#contact" class="btn btn-p btn-sm">Get a Quote</a>
+    </div>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<!-- ================= HERO ================= -->
+<header class="hero" id="home">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="kicker" style="color:#5EEAD4">Huaxin Membrane · Seawater RO Series</span>
+      <h1>Seawater RO That <em>Refuses to Quit</em></h1>
+      <p class="hero-sub">HUAXIN <strong>HX-SW</strong> elements hold 99.7% salt rejection and near-zero scale accumulation through 693 days of continuous field operation — outlasting premium reference membranes in head-to-head trials from Ningxia's coal-chemical plants to ACWA Power's SWRO pilot in Saudi Arabia.</p>
+      <div class="chips">
+        <span class="chip"><i></i>99.7% Stable Salt Rejection</span>
+        <span class="chip"><i></i>693-Day Continuous Operation</span>
+        <span class="chip"><i></i>+0.8 kg vs +22.4 kg Scale</span>
+        <span class="chip"><i></i>ACWA Power MOU · 2026</span>
+      </div>
+      <div class="hero-btns">
+        <a class="btn btn-p" href="#performance">Explore the Field Data
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></a>
+        <a class="btn btn-g" href="#contact">Get an Element Quote</a>
+      </div>
+    </div>
+    <div class="hero-vis">
+      <svg class="elvis" viewBox="0 0 360 460" aria-label="HUAXIN SWRO membrane element">
+        <defs>
+          <linearGradient id="cyl" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#D5E2F0"/><stop offset=".5" stop-color="#FFFFFF"/><stop offset="1" stop-color="#C6D6E8"/></linearGradient>
+          <linearGradient id="cap" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F7EEDC"/><stop offset="1" stop-color="#DFCFA9"/></linearGradient>
+          <radialGradient id="glow" cx=".5" cy=".5" r=".5"><stop offset="0" stop-color="rgba(0,191,165,.4)"/><stop offset="1" stop-color="rgba(0,191,165,0)"/></radialGradient>
+        </defs>
+        <ellipse cx="180" cy="428" rx="140" ry="26" fill="url(#glow)"/>
+        <rect x="90" y="30" width="180" height="356" rx="20" fill="url(#cyl)"/>
+        <g stroke="#ffffff" stroke-opacity=".5" stroke-width="1">
+          <path d="M96 88 L264 68"/><path d="M96 112 L264 96"/><path d="M96 246 L264 232"/><path d="M96 270 L264 258"/><path d="M96 330 L264 318"/>
+        </g>
+        <rect x="90" y="146" width="180" height="70" fill="#0E4C8C" opacity=".93"/>
+        <text x="180" y="177" text-anchor="middle" fill="#fff" font-family="IBM Plex Mono,monospace" font-size="15.5" font-weight="600">HX-SW-8040-400</text>
+        <text x="180" y="199" text-anchor="middle" fill="#9CC4EE" font-family="IBM Plex Sans,sans-serif" font-size="10.5" letter-spacing="1.5">SEAWATER RO · 99.7% REJECTION</text>
+        <ellipse cx="180" cy="30" rx="90" ry="25" fill="#EDF2F8"/>
+        <ellipse cx="180" cy="30" rx="58" ry="15" fill="#E4DCC6"/>
+        <ellipse cx="180" cy="388" rx="90" ry="31" fill="url(#cap)"/>
+        <ellipse cx="180" cy="388" rx="66" ry="21" fill="none" stroke="#CBB88C" stroke-width="1.4"/>
+        <g stroke="#C9B482" stroke-width="2.6" stroke-linecap="round">
+          <line x1="180" y1="388" x2="268" y2="388"/><line x1="180" y1="388" x2="256" y2="403.5"/><line x1="180" y1="388" x2="224" y2="414.8"/>
+          <line x1="180" y1="388" x2="180" y2="419"/><line x1="180" y1="388" x2="136" y2="414.8"/><line x1="180" y1="388" x2="104" y2="403.5"/>
+          <line x1="180" y1="388" x2="92" y2="388"/><line x1="180" y1="388" x2="104" y2="372.5"/><line x1="180" y1="388" x2="136" y2="361.2"/>
+          <line x1="180" y1="388" x2="180" y2="357"/><line x1="180" y1="388" x2="224" y2="361.2"/><line x1="180" y1="388" x2="256" y2="372.5"/>
+        </g>
+        <circle cx="180" cy="388" r="15" fill="#3E4A5A"/><circle cx="180" cy="388" r="9.5" fill="#121C2B"/>
+      </svg>
+      <div class="fchip fc1">Flux <b>1.55 LMH/bar</b> · +6.9%</div>
+      <div class="fchip fc2">Long-term ΔP <b>≈ 1.2 bar</b></div>
+      <div class="fchip fc3">Scale gain <b>+0.8 kg</b> vs +22.4</div>
+    </div>
+  </div>
+  <div class="wrap">
+    <div class="hstats">
+      <div class="hstat rv"><div class="hnum"><span class="cnt" data-to="99.53" data-dec="2">0</span><span class="unit">%</span></div><div class="hlab">Avg. desalination over 670 field days<em>vs 98.17% reference membrane</em></div></div>
+      <div class="hstat rv" style="--d:.1s"><div class="hnum"><span class="cnt" data-to="0.8" data-dec="1" data-pre="+">0</span><span class="unit">kg</span></div><div class="hlab">Scale gain per 8&Prime; element<em>reference gained +22.4 kg</em></div></div>
+      <div class="hstat rv" style="--d:.2s"><div class="hnum"><span class="cnt" data-to="98">0</span></div><div class="hlab">Elements in one full-system deployment<em>zero HUAXIN failures recorded</em></div></div>
+      <div class="hstat rv" style="--d:.3s"><div class="hnum"><span class="cnt" data-to="2.8" data-dec="1" data-pre="$">0</span><span class="unit">M/yr</span></div><div class="hlab">Pretreatment chemicals eliminated<em>at Nanhu plant scale</em></div></div>
+    </div>
+  </div>
+  <div class="waves">
+    <svg class="wave w2" viewBox="0 0 2880 120" preserveAspectRatio="none"><path d="M0,64 C240,24 480,24 720,64 C960,104 1200,104 1440,64 C1680,24 1920,24 2160,64 C2400,104 2640,104 2880,64 L2880,120 L0,120 Z" fill="#123B71"/></svg>
+    <svg class="wave" viewBox="0 0 2880 120" preserveAspectRatio="none"><path d="M0,64 C240,24 480,24 720,64 C960,104 1200,104 1440,64 C1680,24 1920,24 2160,64 C2400,104 2640,104 2880,64 L2880,120 L0,120 Z" fill="#0A2344"/></svg>
+  </div>
+</header>
+
+<!-- ================= TRUST BAR ================= -->
+<div class="trust">
+  <div class="wrap trust-in">
+    <span class="hot">Tsinghua University x-lab</span><span class="dot">·</span>
+    <span>Tsinghua Tongfang</span><span class="dot">·</span>
+    <span class="hot">ACWA Power — Strategic MOU 2026</span><span class="dot">·</span>
+    <span>KACST · KAUST Collaboration</span><span class="dot">·</span>
+    <span>Tested by Tianjin Institute of Seawater Desalination</span><span class="dot">·</span>
+    <span>10M+ m²/yr Capacity</span>
+  </div>
+</div>
+
+<!-- ================= PROBLEM ================= -->
+<section id="problem">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="kicker">01 · The Operator's Challenge</span>
+      <h2 class="sec">Five Failure Modes That Sink SWRO Economics</h2>
+      <p class="lead">Fouling and scaling cost desalination operators billions of dollars per year. Reverse osmosis already delivers over 65% of global desalination capacity — the membrane element is where product-water quality and OPEX are won or lost. Every HUAXIN series is engineered against the five failure modes below.</p>
+    </div>
+    <div class="pgrid5">
+      <div class="pcard5 rv"><span class="pnum">01</span><h3>High desalination &amp; high flux</h3><p>System rejection must hold above 99% with at least 0.6 t/h output per 8&Prime; element — year after year, not just on day one.</p><div class="psol"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><b>HUAXIN:</b> 99.7% stable rejection (HX-SW) at 1.55 LMH/bar — +6.9% flux vs premium reference.</div></div>
+      <div class="pcard5 rv" style="--d:.08s"><span class="pnum">02</span><h3>Wide temperature range</h3><p>Middle East seawater typically runs 25–35°C with sharp fluctuations, stressing both rejection and permeability.</p><div class="psol"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><b>HUAXIN:</b> rejection stays above 99.2% even at 35°C and reduced 53 bar feed in the ACWA pilot.</div></div>
+      <div class="pcard5 rv" style="--d:.16s"><span class="pnum">03</span><h3>Low pressure drop required</h3><p>Compaction and channel fouling push ΔP upward; systems demand below 1.5 bar to protect pumps and energy budgets.</p><div class="psol"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><b>HUAXIN:</b> long-term ΔP ≈ 1.2 bar via high-efficiency spiral winding — +15% water output.</div></div>
+      <div class="pcard5 rv" style="--d:.24s"><span class="pnum">04</span><h3>High cleanability</h3><p>Frequent chemical cleaning permanently degrades typical elements; service life shrinks to 2–3 years in harsh service.</p><div class="psol"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><b>HUAXIN:</b> pH 1–13 cleaning tolerance, life extended toward 5 years; zero elements lost in 1,195 field days.</div></div>
+      <div class="pcard5 rv" style="--d:.32s"><span class="pnum">05</span><h3>Biofouling resistance</h3><p>Marine microbial growth raises differential pressure and can inflate operating cost by more than 30%.</p><div class="psol"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><b>HUAXIN:</b> hydrophilic + charged surface modification cuts biofouling ~50%; +0.8 kg scale vs +22.4 kg.</div></div>
+    </div>
+    <div class="prob-banner rv">
+      <div class="pb-num">+32 kg<small>typical fouling mass on a reference 8&Prime; element</small></div>
+      <div class="pb-num bad">up to 80 kg<small>completely failed elements in the same plant</small></div>
+      <div class="pb-txt">Autopsies from Saudi &amp; Chinese field cases show conventional membranes gaining tens of kilograms of fouling and CaSO₄ scale. <b>HUAXIN elements finished the identical trial at +0.8 kg</b> — with rejection fully intact.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= PERFORMANCE ================= -->
+<section id="performance" class="sec-gray">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="kicker">02 · Field-Proven Data</span>
+      <h2 class="sec">Measured in the Plant, Not the Brochure</h2>
+      <p class="lead">Two industrial-scale trial programs — a 670/525-day scaling challenge at Nanhu coal-chemical plant and a parallel ZLD benchmark against Toray TM820V — plus a commercial-grade SWRO pilot with ACWA Power. All figures below come from the official HUAXIN field test reports.</p>
+    </div>
+    <div class="perf-grid">
+      <div class="chartcard rv">
+        <div class="ct-h"><h4>Long-Term Salt Rejection — 670 Days, No Chemical Pretreatment</h4><span class="ct-s">Nanhu Stage-1 single-element trial · trend schematic after plant log · HUAXIN averaged 99.53% vs 98.17%</span></div>
+        <div class="ch" id="chA"></div>
+      </div>
+      <div class="chartcard rv" style="--d:.1s">
+        <div class="ct-h"><h4>Scale Accumulation — Element Weight</h4><span class="ct-s">Before / after 525-day CaSO₄ scaling trial (Stage 2) — no effective scale-control available</span></div>
+        <div class="ch" id="chB"></div>
+      </div>
+    </div>
+    <div class="perf-grid2">
+      <div class="chartcard rv">
+        <div class="ct-h"><h4>Permeate Conductivity Range</h4><span class="ct-s">Stage-1 trial, µS/cm — lower is better · HUAXIN 55–164 vs reference 172–564</span></div>
+        <div class="ch" id="chC"></div>
+      </div>
+      <div class="chartcard rv" style="--d:.1s">
+        <div class="ct-h"><h4>Head-to-Head Scorecard</h4><span class="ct-s">HUAXIN field data vs leading reference membranes</span></div>
+        <table class="score">
+          <thead><tr><th>Parameter</th><th style="text-align:center">Reference</th><th style="text-align:center">HUAXIN</th><th>Edge</th></tr></thead>
+          <tbody>
+            <tr><td><b>Day-one salt rejection</b><small>HX-SW standard test conditions</small></td><td class="num">99.7%</td><td class="num hx">99.7%</td><td><span class="badge par">PAR — best case matched</span></td></tr>
+            <tr><td><b>670-day avg. desalination</b><small>no chemical pretreatment · CaSO₄ service</small></td><td class="num">98.17%</td><td class="num hx">99.53%</td><td><span class="badge win">HUAXIN +1.36 pts</span></td></tr>
+            <tr><td><b>After aggressive CIP</b><small>repeated acid / alkali cleaning</small></td><td class="num fail">11.4% destroyed</td><td class="num hx">Full recovery</td><td><span class="badge win">HUAXIN — CIP-proof</span></td></tr>
+            <tr><td><b>Scale accumulation</b><small>8&Prime; element · 525 days</small></td><td class="num">+22.4 kg</td><td class="num hx">+0.8 kg</td><td><span class="badge win">~28× less scale</span></td></tr>
+            <tr><td><b>vs Toray TM820V</b><small>ZLD reclaimed water · parallel trial</small></td><td class="num">99.05%</td><td class="num hx">99.09%</td><td><span class="badge win">Marginally higher</span></td></tr>
+            <tr><td><b>Water flux</b><small>55 bar · 22°C · 32 g/L NaCl</small></td><td class="num">1.45 LMH/bar</td><td class="num hx">1.55 LMH/bar</td><td><span class="badge win">HUAXIN +6.9%</span></td></tr>
+          </tbody>
+        </table>
+        <p class="score-note">Conventional elements can match HUAXIN on day-one rejection in their best case. HUAXIN pulls ahead where operators actually lose money — sustained rejection, cleaning survival and near-zero scale retention.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CASES ================= -->
+<section id="cases" class="dark">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="kicker">03 · Field Cases</span>
+      <h2 class="sec">Deployed From Ningxia to the Gulf</h2>
+      <p class="lead">Single-element side-by-side trials, a 98-element full-system replacement, and a pilot inside the world's largest private SWRO fleet. Select a case below.</p>
+    </div>
+    <div class="ctabs rv" id="ctabs"></div>
+    <div id="cbody" class="rv"></div>
+  </div>
+</section>
+
+<!-- ================= PRODUCTS ================= -->
+<section id="products">
+  <div class="wrap">
+    <div class="prod-head rv">
+      <div class="sec-head" style="margin-bottom:0">
+        <span class="kicker">04 · Product Portfolio</span>
+        <h2 class="sec">One Platform. Every Water.<br>Standard 4040 / 8040 Envelopes.</h2>
+        <p class="lead">Full-category RO and NF elements cast on our own independent production line — drop-in replacements for industry-standard pressure vessels, with per-series published test conditions.</p>
+      </div>
+      <a class="btn btn-o btn-sm" href="https://www.huaxinmembrane.com" target="_blank" rel="noopener">Full Product Manual (PDF)
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg></a>
+    </div>
+    <div class="ptabs rv" id="ptabs"></div>
+    <div id="pbody" class="rv"></div>
+  </div>
+</section>
+
+<!-- ================= SELECTOR ================= -->
+<section id="selector" class="sec-gray">
+  <div class="wrap">
+    <div class="sec-head rv" style="text-align:center">
+      <span class="kicker">05 · Find Your Element</span>
+      <h2 class="sec">Get a Recommendation in Three Steps</h2>
+      <p class="lead" style="margin:0 auto">Answer three questions — we'll match your application to the right HUAXIN series and element size, then you can send the recommendation straight to our engineers.</p>
+    </div>
+    <div class="wiz rv">
+      <div class="wsteps">
+        <div class="wstep on" id="ws1"><span>1</span><em>Application</em></div>
+        <div class="wstep" id="ws2"><span>2</span><em>Water Source</em></div>
+        <div class="wstep" id="ws3"><span>3</span><em>Size &amp; Result</em></div>
+      </div>
+      <div id="wstep1" class="wpane"><h3 class="wq">What is your primary application?</h3><div class="wopts" id="wopts1"></div></div>
+      <div id="wstep2" class="wpane hidden"><h3 class="wq" id="wq2"></h3><div class="wopts" id="wopts2"></div><button class="wback" id="wback2">← Back</button></div>
+      <div id="wstep3" class="wpane hidden"><h3 class="wq">Preferred element size &amp; duty</h3><div class="wopts" id="wopts3"></div><button class="wback" id="wback3">← Back</button></div>
+      <div id="wres" class="wpane hidden"></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ROI ================= -->
+<section id="roi" class="dark">
+  <div class="wrap roi-grid">
+    <div class="rv">
+      <span class="kicker">06 · Value Calculator</span>
+      <h2 class="sec">Put a Number on Fouling Resistance</h2>
+      <p class="lead">The Nanhu plant suspended ~USD 2.8M/year of pretreatment chemical dosing after switching to HUAXIN — because the membranes no longer needed chemical protection. Adjust the inputs to size the opportunity for your plant.</p>
+      <ul class="roi-basis">
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Chemical dosing suspended:</b> ~USD 2.8M/yr at Nanhu's 30,000 m³/day scale (≈ $0.26/m³).</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Service life extended</b> from the typical 2–3 years toward 5 years through CIP durability.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Fleet sizing basis:</b> minimum 0.6 t/h output per 8&Prime; element, per SWRO program requirements.</span></li>
+        <li><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg><span><b>Lower energy &amp; cleaning OPEX</b> from +6.9% flux and ~28× less scale retained — not quantified below.</span></li>
+      </ul>
+    </div>
+    <div class="roi-card rv" style="--d:.12s">
+      <div class="rrow"><label>Plant permeate capacity <b id="rCapV">30,000 m³/day</b></label><input type="range" id="rCap" min="1000" max="100000" step="500" value="30000"></div>
+      <div class="rrow"><label>Chemical pretreatment cost <b id="rChemV">$0.26 / m³</b></label><input type="range" id="rChem" min="0" max="0.5" step="0.01" value="0.26"></div>
+      <div class="rrow"><label>8&Prime; element price (for replacement math) <b id="rPriceV">$600</b></label><input type="range" id="rPrice" min="300" max="1200" step="50" value="600"></div>
+      <div class="routs">
+        <div class="rout"><span>Pretreatment chemicals eliminated / yr</span><b id="ro1">—</b></div>
+        <div class="rout"><span>Membrane replacement savings / yr (3 → 5 yr life)</span><b id="ro2">—</b></div>
+        <div class="rout tot"><span>Estimated total annual savings</span><b id="ro3">—</b></div>
+        <div class="rout5"><span>Over a 5-year service window</span><b id="ro4">—</b></div>
+      </div>
+      <p class="rdisc">Indicative estimate derived from published HUAXIN field results at Nanhu (30,000 m³/day). Actual savings depend on feed water, recovery and local chemical &amp; labor prices. <span id="rEls"></span></p>
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section id="about">
+  <div class="wrap about-grid">
+    <div class="rv">
+      <span class="kicker">07 · The Company Behind the Membrane</span>
+      <h2 class="sec">Tsinghua Science. Industrial Scale. Field Proof.</h2>
+      <p class="lead">HUAXIN Membrane is a high-end separation-membrane brand incubated by Tsinghua University x-lab, Tsinghua Tongfang and Tsinghua Chuang+. All three co-founders hold Tsinghua PhDs and built a fully independent production line integrating raw materials, equipment and processes. Our <strong>&ldquo;molecule–nano-composite&rdquo;</strong> hierarchical membrane design delivers higher selectivity, stability and permeability than leading international products — at localized-production economics. Products are type-tested by the Tianjin Institute of Seawater Desalination (Ministry of Natural Resources) and proven through KSA–China technology collaboration.</p>
+      <div class="astats">
+        <div class="astat"><b><i class="cnt" data-to="3">0</i></b><span>Tsinghua PhD co-founders</span></div>
+        <div class="astat"><b><i class="cnt" data-to="10">0</i>M+</b><span>m²/year membrane capacity</span></div>
+        <div class="astat"><b>RMB <i class="cnt" data-to="1">0</i>B</b><span>Shandong production base investment</span></div>
+        <div class="astat"><b><i class="cnt" data-to="150000">0</i> m²+</b><span>manufacturing floor area</span></div>
+      </div>
+    </div>
+    <div class="rv" style="--d:.12s">
+      <div class="tl">
+        <div class="tl-item"><span class="tl-year">— 2023</span><h4>Technological Foundation</h4><p>Decades of membrane research by the Tsinghua PhD founding team, with top R&amp;D institutions in Europe, the Middle East and China.</p></div>
+        <div class="tl-item"><span class="tl-year">2023</span><h4>Brand Creation &amp; Mass Production</h4><p>HUAXIN Membrane launched; full-category RO / NF production begins on an independently developed line.</p></div>
+        <div class="tl-item"><span class="tl-year">2023 – 2025</span><h4>Long-Term Field Validation</h4><p>670 &amp; 525-day scaling trials, a 98-element full-system deployment, and head-to-head benchmarks in China and the Middle East.</p></div>
+        <div class="tl-item"><span class="tl-year">2024 – 2025</span><h4>Industrial Scale-Up — Jining, Shandong</h4><p>RMB 1 billion high-end membrane industrial park; independent IP on sheet casting; 10M+ m²/year capacity.</p></div>
+        <div class="tl-item"><span class="tl-year">2026</span><h4>Global Expansion</h4><p>Strategic cooperation MOU with ACWA Power for antifouling RO membranes in commercial projects; KSA–China technology collaboration deepens.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FAQ ================= -->
+<section id="faq" class="sec-gray">
+  <div class="wrap">
+    <div class="sec-head rv" style="text-align:center">
+      <span class="kicker">08 · Buyer Questions</span>
+      <h2 class="sec">Answers Before You Ask</h2>
+    </div>
+    <div class="faq-wrap rv">
+      <div class="faq-item"><button class="faq-q">Are HUAXIN elements a drop-in replacement for our existing SWRO train?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a"><p>Yes. All elements are manufactured in standard 4040 / 8040 dimensions and interface with industry-standard pressure vessels, interconnectors and loadings. No vessel or piping modification is required — as demonstrated by direct swap-outs in operating plants at Nanhu and Suyin.</p></div></div>
+      <div class="faq-item"><button class="faq-q">What do your published flow and rejection figures represent?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a"><p>Each series has published standard test conditions — e.g. HX-SW: 32,000 ppm NaCl, 800 psi (5.5 MPa), 25°C, 8% recovery, pH 7–8. Individual element flow may vary ±20%. For system design we size on your actual feed-water analysis, free of charge.</p></div></div>
+      <div class="faq-item"><button class="faq-q">How do the membranes survive aggressive cleaning?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a"><p>The polyamide layer tolerates pH 1–13 short-term cleaning and was proven through repeated high-intensity acid and alkali CIP in the field. At the ACWA Power pilot, full CIP was passed with PC90, citric acid and PC11 — with membrane integrity preserved and rejection fully recovered.</p></div></div>
+      <div class="faq-item"><button class="faq-q">Can we run a pilot before committing to full deployment?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a"><p>Yes — this is our standard path. We support single-element side-by-side trials through full-system deployment (98 elements at Nanhu). Our engineering team provides loading plans, start-up supervision and ongoing performance monitoring, with third-party validation available via the Tianjin Institute of Seawater Desalination.</p></div></div>
+      <div class="faq-item"><button class="faq-q">What is your production capacity and lead time?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a"><p>Our Shandong production base — a RMB 1 billion industrial park with 150,000 m²+ of floor area — delivers 10M+ m²/year with independent intellectual property on sheet casting. Localized production means stable supply, shorter lead times and pricing well below imported premium elements.</p></div></div>
+      <div class="faq-item"><button class="faq-q">Do you boost initial performance with oxidative post-treatment?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a"><p>No. Unlike practices that artificially inflate day-one numbers at the cost of long-term decay, HUAXIN uses no oxidative post-treatment. The rejection and flux you commission are genuine and sustainable across the element's service life — verified over 693 days of continuous operation.</p></div></div>
+      <div class="faq-item"><button class="faq-q">Do you offer customized membranes for special applications?<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg></button><div class="faq-a"><p>Yes. Beyond the standard series we engineer custom NF/RO for salt-lake lithium extraction (high monovalent/divalent selectivity, reduced adsorbent demand), salt splitting, and integrated UF / MBR process trains — developed jointly with your process team.</p></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CONTACT ================= -->
+<section id="contact" class="dark">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <span class="kicker">09 · Start a Conversation</span>
+      <h2 class="sec">Get a Quotation, Datasheets or a Pilot Plan</h2>
+      <p class="lead">Tell us about your feed water and plant — our engineers reply within 24 hours with element recommendations, system loading guidance and pricing.</p>
+    </div>
+    <div class="c-grid">
+      <div class="rv">
+        <div class="citem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg><div><b>Email</b><span><a href="mailto:service@huaxinmembrane.com">service@huaxinmembrane.com</a><br>Direct: <a href="mailto:shengqianghei@huaxinmembrane.com">shengqianghei@huaxinmembrane.com</a> — Dr. Hei (Tsinghua PhD)</span></div></div>
+        <div class="citem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg><div><b>Phone / VIP Line</b><span>+86 189 9513 2334 (Mr. Hei) · 0537-2367239</span></div></div>
+        <div class="citem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg><div><b>Headquarters</b><span>Tsinghua Tongfang Science &amp; Technology Building, Courtyard 1, Wangzhuang Road, Haidian District, Beijing, China</span></div></div>
+        <div class="citem"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><div><b>Web &amp; Production Base</b><span><a href="https://www.huaxinmembrane.com" target="_blank" rel="noopener">www.huaxinmembrane.com</a> · Production: Jining, Shandong — 10M+ m²/yr</span></div></div>
+      </div>
+      <form class="cform rv" id="cform" style="--d:.12s">
+        <h3>Request Quotation / Technical Data</h3>
+        <p>Fields marked * are required. Submitting opens a pre-addressed email to our sales engineering team.</p>
+        <div class="frow">
+          <input class="fin" id="fname" name="name" placeholder="Your name *" required>
+          <input class="fin" id="fcompany" name="company" placeholder="Company * " required>
+        </div>
+        <div class="frow">
+          <input class="fin" id="femail" name="email" type="email" placeholder="Business email *" required>
+          <input class="fin" id="fphone" name="phone" placeholder="Phone / WhatsApp">
+        </div>
+        <div class="frow">
+          <input class="fin" id="fcountry" name="country" placeholder="Country / Region">
+          <input class="fin" id="fcap" name="capacity" placeholder="Plant capacity (m³/day)">
+        </div>
+        <select class="fin mw" id="interest" name="interest">
+          <option value="">— Product interest —</option>
+          <option>Seawater RO — HX-SW</option>
+          <option>Anti-Fouling RO — HX-BWFR</option>
+          <option>Brackish RO — HX-BW</option>
+          <option>Low-Pressure RO — HX-LP / HX-XLP</option>
+          <option>Drinking-Water NF — HX-HQ</option>
+          <option>Industrial NF — HX-BM</option>
+          <option>UF / MBR Systems</option>
+          <option>Custom / Pilot Trial</option>
+          <option>Spare Parts &amp; General Inquiry</option>
+        </select>
+        <textarea class="fin mw" id="fmsg" name="message" placeholder="Feed water analysis, application, current membrane brand, timeline…"></textarea>
+        <button class="btn btn-p" type="submit" style="width:100%;justify-content:center">Send Inquiry to HUAXIN
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="5" y1="12" x2="19" y2="12"/><polyline points="12 5 19 12 12 19"/></svg></button>
+        <p class="fnote">We typically respond within 24 hours on business days. Your data is used only to answer this inquiry.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer>
+  <div class="wrap">
+    <div class="f-grid">
+      <div class="f-brand">
+        <a class="brand" href="#home" style="filter:brightness(1.1)">
+          <svg width="36" height="36" viewBox="0 0 40 40"><circle cx="20" cy="20" r="19" fill="url(#lg1)"/><path d="M7 17c4.3-4.2 8.7-4.2 13 0s8.7 4.2 13 0" stroke="#fff" stroke-width="2.3" fill="none" stroke-linecap="round" opacity=".9"/><path d="M9 24c3.7-3.4 7.3-3.4 11 0s7.3 3.4 11 0" stroke="#fff" stroke-width="2" fill="none" stroke-linecap="round" opacity=".55"/></svg>
+          <span class="brand-t"><b>HUAXIN</b><small>Innovation for water</small></span>
+        </a>
+        <p>Better Membrane, Better World. High-performance RO / NF / UF / MBR membranes developed by a Tsinghua PhD team — breaking foreign monopolies with independent production at global scale.</p>
+      </div>
+      <div>
+        <h5>Products</h5>
+        <a href="#products">HX-SW Seawater RO</a><a href="#products">HX-BWFR Anti-Fouling RO</a><a href="#products">HX-BW / HX-LP / HX-XLP RO</a><a href="#products">HX-HQ Drinking NF</a><a href="#products">HX-BM Industrial NF</a><a href="#products">UF &amp; MBR Systems</a>
+      </div>
+      <div>
+        <h5>Company</h5>
+        <a href="#performance">Field Performance Data</a><a href="#cases">Case Studies</a><a href="#roi">Savings Calculator</a><a href="#about">About HUAXIN</a><a href="#contact">Contact Sales</a>
+      </div>
+    </div>
+    <div class="f-bot">
+      <span>© <span id="year"></span> Huaxin Nano (Beijing) Technology Co., Ltd. All rights reserved.</span>
+      <span>All performance figures cited from official HUAXIN field test reports &amp; product manual.</span>
+    </div>
+  </div>
+</footer>
+
+<button id="toTop" aria-label="Back to top"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><line x1="12" y1="19" x2="12" y2="5"/><polyline points="5 12 12 5 19 12"/></svg></button>
+<div id="toast" role="status"></div>
+
+<script>
+/* ============ HELPERS ============ */
+const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
+const CHECK='<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>';
+let toastT;
+function toast(m){const t=$('#toast');t.textContent=m;t.classList.add('show');clearTimeout(toastT);toastT=setTimeout(()=>t.classList.remove('show'),3400);}
+ $('#year').textContent=new Date().getFullYear();
+
+/* ============ PRODUCT DATA (from official HUAXIN product manual) ============ */
+const COND_BASE=[['Max. feed flow','16 gpm (4040) · 75 gpm (8040)'],['Max. feed temperature','45 °C'],['Max. feed SDI','5'],['Max. free chlorine','<0.1 ppm'],['Continuous pH range','2–11'],['Short-term cleaning pH (30 min)','1–13'],['Max. ΔP per element','15 psi (0.10 MPa)'],['Element sizes','4040 / 8040 spiral-wound']];
+const PRODUCTS={
+ sw:{name:'HX-SW',label:'Seawater RO',flag:true,headline:'High-Rejection, High-Flux Seawater Desalination RO Element',
+  desc:'Engineered for feed salinity above 10,000 ppm — open-sea intake, high-salinity brine and mine water. Unlike many manufacturers, no oxidative post-treatment is used to artificially boost initial performance, so the rejection and flux you commission are the performance you keep for years.',
+  features:['99.7% stable salt rejection with high boron rejection','No oxidative post-treatment — genuine long-term output','Effective CIP across wide pH 1–13','Field-proven at 40,000 µS/cm feed through repeated acid & alkali cleaning'],
+  apps:['Seawater desalination (SWRO)','High-salinity brine & mine water','ZLD concentrate stages','Landfill leachate'],
+  test:'32,000 ppm NaCl · 800 psi (5.5 MPa) · 77°F (25°C) · 8% recovery · pH 7–8',
+  cond:[['Max. operating pressure','8.0 MPa']].concat(COND_BASE),
+  models:[{m:'SW-4040-100',a:'100 (9.3)',f:'1,800 (6.8)',r:'99.7'},{m:'SW-8040-400',a:'400 (37.2)',f:'7,500 (28.4)',r:'99.7',hot:true},{m:'SW-8040-440',a:'440 (40.9)',f:'8,200 (31.0)',r:'99.7'}]},
+ bwfr:{name:'HX-BWFR',label:'Anti-Fouling RO',headline:'Anti-Fouling Brackish Water RO Element',
+  desc:'High desalination, high output and contamination resistance for feed below 5,000 ppm under high-fouling conditions — reclaimed water, difficult wells and surface water. Hydrophilic + charged surface chemistry sheds foulants and survives repeated cleaning cycles.',
+  features:['99.5% stable rejection at low operating pressure','Surface modification cuts fouling ~50%','Broad pH tolerance, easy effective cleaning','Proven in 525-day high-scaling reuse trial'],
+  apps:['Municipal wastewater reuse','High-fouling brackish wells','Boiler feedwater','Surface water RO'],
+  test:'2,000 ppm NaCl · 225 psi (15.5 bar) · 77°F (25°C) · 15% recovery · pH 7–8',
+  cond:[['Max. operating pressure','4.1 MPa']].concat(COND_BASE),
+  models:[{m:'BWFR-4040-100',a:'100 (9.3)',f:'2,400 (9.1)',r:'99.5'},{m:'BWFR-8040-400',a:'400 (37.2)',f:'10,500 (39.7)',r:'99.5',hot:true}]},
+ bw:{name:'HX-BW',label:'Brackish RO',headline:'High-Rejection Brackish Water RO Element',
+  desc:'Industrial-grade brackish RO for salinity below 5,000 ppm: low operating pressure, high permeate flow and excellent salt rejection, with broad pH tolerance and strong chemical resistance for easy, effective cleaning.',
+  features:['99.5% stable rejection','Low operating pressure — energy efficient','pH 2–11 continuous · 1–13 cleaning','Robust on moderately saline sources'],
+  apps:['Deep-well & surface water','Boiler make-up','Moderately saline brackish water'],
+  test:'2,000 ppm NaCl · 225 psi (15.5 bar) · 77°F (25°C) · 15% recovery · pH 7–8',
+  cond:[['Max. operating pressure','4.1 MPa']].concat(COND_BASE),
+  models:[{m:'BW-4040-100',a:'100 (9.3)',f:'2,400 (9.1)',r:'99.5'},{m:'BW-8040-400',a:'400 (37.2)',f:'10,500 (39.7)',r:'99.5',hot:true},{m:'BW-8040-440',a:'440 (40.9)',f:'11,500 (43.5)',r:'99.5'}]},
+ lp:{name:'HX-LP',label:'Low-Pressure RO',headline:'Energy-Saving, High-Permeate Low-Pressure RO Element',
+  desc:'Excellent chemical cleaning tolerance for repeated acid and alkali cycles, long service life and significantly reduced energy consumption under low-pressure operation.',
+  features:['99.3% stable rejection at 150 psi test','Excellent chemical cleaning tolerance','Long service life, low energy cost','High permeate flow per element'],
+  apps:['Low-salinity deep well & surface water','Boiler feedwater','Brackish water < 2,000 ppm'],
+  test:'1,500 ppm NaCl · 150 psi (1.03 MPa) · 77°F (25°C) · 15% recovery · pH 7–8',
+  cond:[['Max. operating pressure','4.1 MPa']].concat(COND_BASE),
+  models:[{m:'LP-4040-100',a:'100 (9.3)',f:'2,400 (9.1)',r:'99.3'},{m:'LP-8040-400',a:'400 (37.2)',f:'10,500 (39.7)',r:'99.3',hot:true},{m:'LP-8040-440',a:'440 (40.9)',f:'11,500 (43.5)',r:'99.3'}]},
+ xlp:{name:'HX-XLP',label:'Extra-Low-Pressure RO',headline:'Energy-Efficient, High-Flux Extra-Low-Pressure RO Element',
+  desc:'Delivers high permeate flow under ultra-low operating pressure, significantly reducing energy and system operation costs — ideal for second-pass systems and ultrapure water production.',
+  features:['99.0% stable rejection at only 100 psi','Lowest energy consumption in the lineup','Ideal for second-stage RO & ultrapure feed','High flux at minimal pressure'],
+  apps:['Second-stage RO systems','Ultrapure water in electronics','Food & beverage process water','Seawater & municipal post-treatment'],
+  test:'500 ppm NaCl · 100 psi (0.69 MPa) · 77°F (25°C) · 15% recovery · pH 7–8',
+  cond:[['Max. operating pressure','4.1 MPa']].concat(COND_BASE),
+  models:[{m:'XLP-4040-100',a:'100 (9.3)',f:'2,200 (8.3)',r:'99.0'},{m:'XLP-8040-400',a:'400 (37.2)',f:'9,500 (35.9)',r:'99.0',hot:true},{m:'XLP-8040-440',a:'440 (40.9)',f:'10,500 (39.7)',r:'99.0'}]},
+ hq:{name:'HX-HQ',label:'Drinking-Water NF',headline:'High-Flux Nanofiltration for Premium Drinking Water',
+  desc:'Effectively removes trace organic micropollutants, bacteria and viruses from source water while retaining beneficial minerals such as silica and strontium — softening water and enhancing taste for premium drinking water.',
+  features:['>90% rejection of NaCl & MgSO₄','Softening + color & odor removal','Retains healthy minerals','High flux at just 100 psi'],
+  apps:['Premium drinking water','Municipal deep purification','Hardness softening'],
+  test:'2,000 ppm NaCl · 100 psi (6.9 bar) · 77°F (25°C) · 15% recovery · pH 7–8',
+  cond:[['Max. operating pressure','4.1 MPa']].concat(COND_BASE),
+  models:[{m:'HQ-4040-100',a:'100 (9.3)',f:'2,200 (9.1)',r:'>90'},{m:'HQ-8040-400',a:'400 (37.2)',f:'10,500 (39.7)',r:'>90',hot:true},{m:'HQ-8040-440',a:'440 (40.9)',f:'11,500 (43.5)',r:'>90'}]},
+ bm:{name:'HX-BM',label:'Industrial NF',headline:'Industrial Salt-Separation NF Element',
+  desc:'Selective nanofiltration retaining organics above 200 Da and divalent salts while allowing partial monovalent salt passage — enabling precise salt/organic separation, solute concentration and value recovery.',
+  features:['NaCl rejection only 5–30% — monovalent passage','MgSO₄ rejection ≈ 98%','Precise molecular cut-off (>200 Da)','Value recovery from process streams'],
+  apps:['Salt–organic separation','Salt splitting','Solute concentration & recovery'],
+  test:'2,000 ppm NaCl / MgSO₄ · 100 psi (6.9 bar) · 77°F (25°C) · 15% recovery · pH 7–8',
+  cond:[['Max. operating pressure','4.1 MPa']].concat(COND_BASE),
+  models:[{m:'BM-4040-100',a:'100 (9.3)',f:'2,400 (9.1)',r:'5–30 / 98'},{m:'BM-8040-400',a:'400 (37.2)',f:'9,500 (35.9)',r:'5–30 / 98',hot:true},{m:'BM-8040-440',a:'440 (40.9)',f:'10,500 (39.7)',r:'5–30 / 98'}]},
+ ufmb:{name:'UF / MBR',label:'UF & MBR',headline:'PVDF Ultrafiltration & Stainless-Frame MBR',
+  desc:'Hollow-fiber PVDF column UF (NIPS fabrication, <30 nm pores, pH 1–14) for RO pre-treatment or standalone duty — plus a new-generation MBR module with stainless-steel frame and >100 mm fiber spacing that cuts fiber tangling and cleaning frequency.',
+  features:['PVDF hollow fiber · pH 1–14','<30 nm pores · bubble point >30 kPa','MBR: stainless frame, >100 mm spacing','UF 90/160/200/250 · MBR 150–400 m³/d'],
+  apps:['RO pre-treatment','Municipal & industrial wastewater','MBR biological treatment'],
+  test:'Cross-flow or dead-end operation · 5–45 °C · pH 1–14',
+  cond:[['Membrane material','PVDF'],['Pore size','< 30 nm'],['Operating temp.','5–45 °C'],['Applied pH range','1–14'],['Fabrication','NIPS'],['Shell material','UPVC'],['Fiber ID / OD','0.8 / 1.2 mm'],['Filtration mode','Full-flow or cross-flow']],
+  uf:[{m:'HX-UF-90',l:'1,192',d:'90',a:'10',fl:'≥3.0'},{m:'HX-UF-160',l:'1,500',d:'160',a:'40',fl:'≥5.0'},{m:'HX-UF-200',l:'2,100',d:'200',a:'60',fl:'≥8.0'},{m:'HX-UF-250',l:'1,715',d:'250',a:'90',fl:'≥10.0'}],
+  mbr:['HX-MBR-2020 · 150 m³/d','HX-MBR-2028 · 200 m³/d','HX-MBR-2034 · 250 m³/d','HX-MBR-2042 · 300 m³/d','HX-MBR-2048 · 350 m³/d','HX-MBR-2054 · 400 m³/d']}
+};
+const PROD_ORDER=['sw','bwfr','bw','lp','xlp','hq','bm','ufmb'];
+
+function roTable(p){
+  return '<table class="spec"><thead><tr><th>Model</th><th>Effective Area ft² (m²)</th><th>Permeate Flow GPD (m³/d)</th><th>Stable Rejection %</th></tr></thead><tbody>'+
+  p.models.map(x=>'<tr'+(x.hot?' class="hot"':'')+'><td class="mono" style="font-weight:600;color:var(--ink)">'+x.m+(x.hot?'<span class="hotb">POPULAR</span>':'')+'</td><td>'+x.a+'</td><td>'+x.f+'</td><td class="rej">'+x.r+'</td></tr>').join('')+
+  '</tbody></table><div class="tnote">Test conditions: '+p.test+' · single-element flow may vary ±20%.</div>';
+}
+function ufTable(p){
+  return '<table class="spec"><thead><tr><th>Model</th><th>Length mm</th><th>Shell Ø mm</th><th>Membrane Area m²</th><th>Initial Flow t/h</th></tr></thead><tbody>'+
+  p.uf.map(x=>'<tr><td class="mono" style="font-weight:600;color:var(--ink)">'+x.m+'</td><td>'+x.l+'</td><td>'+x.d+'</td><td>'+x.a+'</td><td class="rej">'+x.fl+'</td></tr>').join('')+
+  '</tbody></table><div class="tnote">PVDF hollow fiber · NIPS · pore <30 nm · pH 1–14 · UPVC shell · full-flow or cross-flow.</div>'+
+  '<h4>MBR Module Range</h4><div class="mbr">'+p.mbr.map(x=>'<span>'+x+'</span>').join('')+'</div>'+
+  '<div class="tnote">Stainless-steel frame MBR · >100 mm fiber spacing · reduced tangling & cleaning frequency.</div>';
+}
+function condGrid(p){
+  return '<div class="cond">'+p.cond.map(x=>'<div class="cond-i"><span>'+x[0]+'</span><b>'+x[1]+'</b></div>').join('')+'</div>';
+}
+function renderProduct(k){
+  const p=PRODUCTS[k];
+  $('#pbody').innerHTML='<div class="pgrid">'+
+   '<div class="pcard"><div class="ptop"><span class="pname">'+p.name+'</span><span class="plabel">'+p.label+'</span>'+(p.flag?'<span class="flag">FLAGSHIP — SWRO</span>':'')+'</div>'+
+   '<h3>'+p.headline+'</h3><p class="pdesc">'+p.desc+'</p>'+
+   '<ul class="pfeat">'+p.features.map(f=>'<li>'+CHECK+'<span>'+f+'</span></li>').join('')+'</ul>'+
+   '<div class="papps"><b>Main applications:</b><br>'+p.apps.map(a=>'<span class="pchip">'+a+'</span>').join('')+'</div></div>'+
+   '<div class="pcard spec-card"><h4>Product Specifications</h4>'+(p.uf?ufTable(p):roTable(p))+'<h4>Applied Conditions</h4>'+condGrid(p)+'</div></div>';
+}
+ $('#ptabs').innerHTML=PROD_ORDER.map((k,i)=>'<button class="ptab'+(i===0?' on':'')+'" data-k="'+k+'">'+PRODUCTS[k].name+'<span>'+PRODUCTS[k].label+'</span></button>').join('');
+renderProduct('sw');
+ $('#ptabs').addEventListener('click',e=>{
+  const b=e.target.closest('.ptab'); if(!b)return;
+  $$('.ptab').forEach(t=>t.classList.remove('on')); b.classList.add('on'); renderProduct(b.dataset.k);
+});
+
+/* ============ CASES ============ */
+const CASES=[
+ {tab:'Nanhu · Coal-Chemical',k:'Nanhu Water Plant · Ningdong, Ningxia — China',d:'670 + 525-day single-element trials · 98-element full-system deployment',
+  t:'RO Plant That Shut Off Its Pretreatment Chemicals',
+  ch:'To cut OPEX, the plant suspended ~USD 2.8M/year of pretreatment chemical dosing — exposing two-stage RO to extreme CaSO₄ scaling risk with no effective control method. Feed: Ca²⁺ 1,510 · Mg²⁺ 1,440 · SO₄²⁻ 7,300 · Cl⁻ 4,900 mg/L · TDS 14,047 · pH 7.95.',
+  ms:[['99.53%','Avg. desalination — Stage 1, 670 days'],['vs 98.17%','Reference membrane on the same line'],['+0.8 kg','HUAXIN scale gain vs +22.4 kg reference'],['11.4%','Reference elements destroyed after one CIP — HUAXIN: zero']],
+  note:'Full-system verdict: significantly superior in desalination capacity, CaSO₄ scaling resistance, chemical-cleaning resistance and long-term stability under high-hardness, no-pretreatment conditions. At 40,000 µS/cm extreme feed and 30–35 bar, desalination held above 99.3% through repeated high-intensity acid & alkali cleaning.'},
+ {tab:'Suyin ZLD · vs Toray',k:'Suyin Industrial Park · Reclaimed-Water ZLD',d:'Parallel head-to-head trial since 18 Oct 2024',
+  t:'Head-to-Head Against Toray TM820V in ZLD Service',
+  ch:'Stage-1 concentrated-water RO of a zero-liquid-discharge reclaimed-water plant (Class 1-A feed, GB 18918-2002) benchmarked directly against Japan\u2019s premium Toray TM820V seawater element — targeting 100% wastewater interception, 100% reuse and 100% salt-separation compliance.',
+  ms:[['99.09%','HUAXIN HX-SW-8040-400 avg. desalination'],['99.05%','Toray TM820V — same period, same line'],['Stable','Both membranes throughout production'],['100%','Wastewater interception & reuse target']],
+  note:'Conclusion: performance comparable to — and marginally higher than — the established premium competitor, confirming international-grade HUAXIN quality at industrial scale.'},
+ {tab:'ACWA Power · KSA',k:'ACWA Power · Kingdom of Saudi Arabia',d:'Commercial-grade SWRO pilot · Strategic MOU signed 2026',
+  t:'SWRO Pilot Inside the World\u2019s Largest Private Desalination Fleet',
+  ch:'Pilot evaluation within ACWA Power — the world\u2019s largest private seawater desalination enterprise and pioneer of SWRO in the Middle East, producing over 60% of Saudi Arabia\u2019s desalinated water under Vision 2030 (8.1M m³/day contracted capacity).',
+  ms:[['61.5 bar','Stable feed pressure at 25°C across service life'],['1.2 bar','Long-term ΔP — clean feed channels'],['>99.2%','Rejection at 35°C and reduced 53 bar'],['3 / 3','CIP passed: PC90 · citric acid · PC11']],
+  note:'Strategic cooperation MOU signed at Innovation Days (January 2026): antifouling RO membranes for commercial projects — with KACST and KAUST collaboration behind the technology.'},
+ {tab:'Extreme Brine',k:'Landfill Leachate & High-Salinity Lakes',d:'Multi-site industrial ZLD service · 40,000–42,500 µS/cm feed',
+  t:'42,500 µS/cm Service — Where Reference Elements Collapse',
+  ch:'Second-stage ZLD landfill-leachate RO at ~42,500 µS/cm and high-salinity lake brine at 40,000 µS/cm — feeds with no effective scale-control method, where reference seawater elements failed catastrophically.',
+  ms:[['94.2%','Rejection at 42,500 µS/cm (reference: 92.8%)'],['>99.3%','Sustained at 40,000 µS/cm extreme feed'],['16.1 kg','HUAXIN final element weight vs 80 kg failed refs'],['pH 1–13','Repeated aggressive CIP fully survived']],
+  note:'After long-term service and strong customer recognition, the plant placed a further large-scale replacement order for HUAXIN membranes.'}
+];
+ $('#ctabs').innerHTML=CASES.map((c,i)=>'<button class="ctab'+(i===0?' on':'')+'" data-i="'+i+'">'+c.tab+'</button>').join('');
+function renderCase(i){
+  const c=CASES[i];
+  $('#cbody').innerHTML='<div class="case"><span class="case-k">'+c.k+'</span><div class="case-d">'+c.d+'</div><h3>'+c.t+'</h3><p class="case-ch">'+c.ch+'</p>'+
+   '<div class="cmets">'+c.ms.map(m=>'<div class="cmet"><b>'+m[0]+'</b><span>'+m[1]+'</span></div>').join('')+'</div>'+
+   '<div class="case-note">'+c.note+'</div></div>';
+}
+renderCase(0);
+ $('#ctabs').addEventListener('click',e=>{
+  const b=e.target.closest('.ctab'); if(!b)return;
+  $$('.ctab').forEach(t=>t.classList.remove('on')); b.classList.add('on'); renderCase(+b.dataset.i);
+});
+
+/* ============ WIZARD ============ */
+const WIZ={
+ root:{q:'What is your primary application?',opts:[
+  {t:'Seawater Desalination',d:'SWRO plants, coastal & island water supply',go:'sw1'},
+  {t:'Brackish / Low-Salinity Water',d:'Wells & surface water below 5,000 ppm',go:'br1'},
+  {t:'Wastewater Reuse & ZLD',d:'Reclaimed water, high-scaling industrial brine',go:'zw1'},
+  {t:'Drinking Water & Premium Quality',d:'Softening, mineral retention, taste',go:'dq1'},
+  {t:'Industrial Process & Special',d:'Salt splitting, Li extraction, UF / MBR',go:'sp1'}]},
+ sw1:{q:'Feed water salinity?',opts:[
+  {t:'Standard seawater ~32,000 ppm',d:'Typical open-intake SWRO duty',r:'sw'},
+  {t:'High-salinity brine > 40,000 ppm',d:'Concentrated brine, mine water, extreme feed',r:'sw'}]},
+ br1:{q:'Feed TDS & fouling risk?',opts:[
+  {t:'Below 1,000 ppm · lowest energy',d:'Second-pass RO & ultrapure feed',r:'xlp'},
+  {t:'1,000 – 2,000 ppm',d:'Standard low-pressure duty',r:'lp'},
+  {t:'2,000 – 5,000 ppm',d:'Standard brackish water',r:'bw'},
+  {t:'2,000 – 5,000 ppm · high fouling',d:'Difficult sources, reclaimed water',r:'bwfr'}]},
+ zw1:{q:'Primary treatment focus?',opts:[
+  {t:'High-scaling brine concentration (ZLD)',d:'No-pretreatment / high-hardness service',r:'sw'},
+  {t:'Municipal reuse with fouling resistance',d:'Reclaimed-water RO',r:'bwfr'},
+  {t:'Salt–organic separation / recovery',d:'Selective nanofiltration',r:'bm'},
+  {t:'Biological treatment / pre-filtration',d:'MBR or PVDF ultrafiltration',r:'ufmb'}]},
+ dq1:{q:'What matters most?',opts:[
+  {t:'Mineral retention & taste (NF)',d:'Softening, micropollutant removal',r:'hq'},
+  {t:'Full desalination, low energy (RO)',d:'TDS below 2,000 ppm',r:'lp'}]},
+ sp1:{q:'Select your application:',opts:[
+  {t:'Lithium / salt-lake extraction',d:'Custom NF/RO selectivity',r:'custom'},
+  {t:'Salt splitting & organic concentration',d:'Mono-/divalent salt separation',r:'bm'},
+  {t:'Ultrafiltration pre-treatment',d:'PVDF hollow fiber, pH 1–14',r:'ufmb'},
+  {t:'Membrane Bioreactor (MBR)',d:'Stainless-frame module',r:'ufmb'}]}
+};
+const SIZES=[
+ {k:'4040',t:'4040 — 100 ft² (9.3 m²)',d:'Small systems, pilots & skids'},
+ {k:'8040-400',t:'8040 — 400 ft² (37.2 m²)',d:'Standard industrial 8-inch — most popular'},
+ {k:'8040-440',t:'8040 — 440 ft² (40.9 m²)',d:'High-area / high-flux version'}
+];
+const SELMAP={sw:'Seawater RO — HX-SW',bwfr:'Anti-Fouling RO — HX-BWFR',bw:'Brackish RO — HX-BW',lp:'Low-Pressure RO — HX-LP / HX-XLP',xlp:'Low-Pressure RO — HX-LP / HX-XLP',hq:'Drinking-Water NF — HX-HQ',bm:'Industrial NF — HX-BM',ufmb:'UF / MBR Systems',custom:'Custom / Pilot Trial'};
+const CUSTOM={m:'HX-CUSTOM NF/RO',label:'Engineered Solution',test:'Defined jointly with our process engineers',a:'—',f:'—',r:'Tailored',
+ desc:'Customized NF/RO for salt-lake lithium extraction and specialty separations — high monovalent/divalent selectivity with reduced adsorbent and auxiliary-agent demand, developed with your process team.'};
+const CUSTOM_FEAT=['High monovalent/divalent selectivity','Minimized adsorbent & auxiliary agents','Joint development with your process team'];
+
+let wSeries=null;
+ $('#wopts1').innerHTML=WIZ.root.opts.map(o=>'<button class="wopt" data-go="'+o.go+'"><b>'+o.t+'</b><span>'+o.d+'</span></button>').join('');
+function setStep(n){
+  [1,2,3].forEach(i=>{
+    const el=$('#ws'+i); el.classList.remove('on','done');
+    if(i<n)el.classList.add('done'); else if(i===n)el.classList.add('on');
+  });
+}
+function wShow(id){
+  ['wstep1','wstep2','wstep3','wres'].forEach(x=>$('#'+x).classList.add('hidden'));
+  $('#'+id).classList.remove('hidden');
+}
+function openStep2(go){
+  $('#wq2').textContent='Step 2 — '+WIZ[go].q;
+  $('#wopts2').innerHTML=WIZ[go].opts.map(o=>'<button class="wopt" data-r="'+o.r+'"><b>'+o.t+'</b><span>'+o.d+'</span></button>').join('');
+  setStep(2); wShow('wstep2');
+}
+function openStep3(series){
+  wSeries=series;
+  $('#wopts3').innerHTML=SIZES.map(s=>'<button class="wopt" data-s="'+s.k+'"><b>'+s.t+'</b><span>'+s.d+'</span></button>').join('');
+  setStep(3); wShow('wstep3');
+}
+function showResult(sizeKey){
+  setStep(4); 
+  const p=wSeries==='custom'?null:PRODUCTS[wSeries];
+  let model,feat,desc;
+  if(wSeries==='custom'){model=CUSTOM;feat=CUSTOM_FEAT;desc=CUSTOM.desc;}
+  else{
+    model=p.models.find(x=>x.m.includes(sizeKey))||p.models[p.models.length-1];
+    feat=p.features.slice(0,3); desc=p.headline;
+  }
+  $('#wres').innerHTML='<div class="res"><span class="res-k">RECOMMENDED ELEMENT</span><h3>'+model.m+'</h3>'+
+   '<div class="res-sub">'+(wSeries==='custom'?desc:p.name+' — '+desc)+'</div>'+
+   '<div class="res-grid">'+
+   '<div><span>Effective area</span><b>'+(wSeries==='custom'?'—':model.a+' ft² (m²)')+'</b></div>'+
+   '<div><span>Permeate flow</span><b>'+(wSeries==='custom'?'—':model.f+' GPD (m³/d)')+'</b></div>'+
+   '<div><span>Stable rejection</span><b>'+(wSeries==='custom'?'Tailored':model.r+'%')+'</b></div>'+
+   '<div><span>Test conditions</span><b class="small">'+(wSeries==='custom'?CUSTOM.test:p.test)+'</b></div></div>'+
+   '<ul class="res-feat">'+feat.map(f=>'<li>'+CHECK+'<span>'+f+'</span></li>').join('')+'</ul>'+
+   '<div class="res-btns"><button class="btn btn-p" id="wquote">Request quotation & datasheet</button><button class="btn btn-o" id="wrestart">Start over</button></div></div>';
+  wShow('wres');
+  $('#wquote').addEventListener('click',()=>{
+    $('#interest').value=SELMAP[wSeries]||'Custom / Pilot Trial';
+    $('#contact').scrollIntoView({behavior:'smooth'});
+    toast('Model added to your inquiry form — complete your details to send.');
+  });
+  $('#wrestart').addEventListener('click',()=>{setStep(1);wShow('wstep1');});
+}
+ $('#wopts1').addEventListener('click',e=>{const b=e.target.closest('.wopt');if(b)openStep2(b.dataset.go);});
+ $('#wopts2').addEventListener('click',e=>{const b=e.target.closest('.wopt');if(b)openStep3(b.dataset.r);});
+ $('#wopts3').addEventListener('click',e=>{const b=e.target.closest('.wopt');if(b)showResult(b.dataset.s);});
+ $('#wback2').addEventListener('click',()=>{setStep(1);wShow('wstep1');});
+ $('#wback3').addEventListener('click',()=>{setStep(2);wShow('wstep2');});
+
+/* ============ ROI CALCULATOR ============ */
+const fmt=n=>'$'+Math.round(n).toLocaleString('en-US');
+function roiCalc(){
+  const cap=+$('#rCap').value, chem=+$('#rChem').value, price=+$('#rPrice').value;
+  $('#rCapV').textContent=cap.toLocaleString('en-US')+' m³/day';
+  $('#rChemV').textContent='$'+chem.toFixed(2)+' / m³';
+  $('#rPriceV').textContent='$'+price;
+  const els=Math.round(cap/14.4);
+  const chemY=cap*365*chem;
+  const replY=els*price*(1/3-1/5);
+  const tot=chemY+replY;
+  $('#ro1').textContent=fmt(chemY);
+  $('#ro2').textContent=fmt(replY);
+  $('#ro3').textContent=fmt(tot)+' / yr';
+  $('#ro4').textContent='≈ '+(tot*5/1e6>=1?'$'+(tot*5/1e6).toFixed(1)+'M':fmt(tot*5));
+  $('#rEls').textContent='Your fleet at 0.6 t/h/element ≈ '+els.toLocaleString('en-US')+' × 8-inch elements.';
+}
+['rCap','rChem','rPrice'].forEach(id=>$('#'+id).addEventListener('input',roiCalc));
+roiCalc();
+
+/* ============ FAQ ============ */
+ $$('.faq-q').forEach(q=>q.addEventListener('click',()=>{
+  const item=q.parentElement, a=item.querySelector('.faq-a'), open=item.classList.contains('open');
+  $$('.faq-item').forEach(it=>{it.classList.remove('open');it.querySelector('.faq-a').style.maxHeight='0px';});
+  if(!open){item.classList.add('open');a.style.maxHeight=a.scrollHeight+'px';}
+}));
+
+/* ============ CONTACT FORM ============ */
+ $('#cform').addEventListener('submit',e=>{
+  e.preventDefault();
+  const f=e.target, d=new FormData(f);
+  const subject='[Website Inquiry] '+(d.get('company')||d.get('name'))+' — '+(d.get('interest')||'HUAXIN Membranes');
+  const body='Name: '+(d.get('name')||'')+'\nCompany: '+(d.get('company')||'')+'\nCountry: '+(d.get('country')||'')+
+   '\nEmail: '+(d.get('email')||'')+'\nPhone: '+(d.get('phone')||'')+'\nPlant capacity: '+(d.get('capacity')||'')+
+   '\nProduct interest: '+(d.get('interest')||'')+'\n\nMessage:\n'+(d.get('message')||'');
+  window.location.href='mailto:service@huaxinmembrane.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+  toast('Opening your email client — HUAXIN replies within 24 hours.');
+});
+
+/* ============ COUNTERS / REVEAL / SPY / NAV ============ */
+function animCnt(el){
+  const to=parseFloat(el.dataset.to),dec=+(el.dataset.dec||0),pre=el.dataset.pre||'',suf=el.dataset.suf||'';
+  const t0=performance.now(),dur=1500;
+  (function step(t){
+    let p=Math.min(1,(t-t0)/dur); p=1-Math.pow(1-p,3);
+    const v=to*p;
+    el.textContent=pre+(dec?v.toFixed(dec):Math.round(v).toLocaleString('en-US'))+suf;
+    if(p<1)requestAnimationFrame(step);
+  })(t0);
+}
+const cntObs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){animCnt(e.target);cntObs.unobserve(e.target);}}),{threshold:.4});
+ $$('.cnt').forEach(el=>cntObs.observe(el));
+const rvObs=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');rvObs.unobserve(e.target);}}),{threshold:.12});
+ $$('.rv').forEach(el=>rvObs.observe(el));
+
+const links={};
+ $$('.nav-links a').forEach(a=>{const h=a.getAttribute('href');if(h&&h.startsWith('#')&&!a.classList.contains('btn'))links[h.slice(1)]=a;});
+const spy=new IntersectionObserver(es=>es.forEach(e=>{
+  if(e.isIntersecting&&links[e.target.id]){$$('.nav-links a').forEach(a=>a.classList.remove('active'));links[e.target.id].classList.add('active');}
+}),{rootMargin:'-40% 0px -55% 0px'});
+ $$('section[id]').forEach(s=>spy.observe(s));
+
+window.addEventListener('scroll',()=>{
+  $('#navbar').classList.toggle('scrolled',scrollY>10);
+  $('#toTop').classList.toggle('show',scrollY>700);
+});
+ $('#toTop').addEventListener('click',()=>scrollTo({top:0,behavior:'smooth'}));
+ $('#burger').addEventListener('click',()=>$('#navLinks').classList.toggle('open'));
+ $$('#navLinks a').forEach(a=>a.addEventListener('click',()=>$('#navLinks').classList.remove('open')));
+
+/* ============ CHARTS (lazy init on scroll into view) ============ */
+const _charts=[];
+function mk(id,opt){const el=document.getElementById(id);if(!el)return;const c=echarts.init(el);c.setOption(opt);_charts.push(c);}
+window.addEventListener('resize',()=>_charts.forEach(c=>c.resize()));
+function initCharts(){
+  if(typeof echarts==='undefined')return;
+  const AX={color:'#8296AB',fontSize:10}, SP={lineStyle:{color:'#EEF3F8'}};
+  /* A — 670-day rejection */
+  const days=['0','60','120','180','240','300','360','420','480','540','600','670'];
+  const hx=[99.50,99.55,99.48,99.56,99.50,99.54,99.47,99.53,99.50,99.55,99.48,99.53];
+  const ref=[99.15,99.05,98.80,98.40,98.10,98.30,97.80,98.00,97.50,97.70,97.30,97.60];
+  mk('chA',{
+    grid:{left:46,right:16,top:36,bottom:30},
+    tooltip:{trigger:'axis',formatter:ps=>'Day '+ps[0].axisValue+'<br/>'+ps.map(p=>p.marker+' '+p.seriesName+': '+p.data+'%').join('<br/>')},
+    legend:{top:0,right:0,textStyle:{color:'#5B7188',fontSize:11},itemWidth:18,itemHeight:9},
+    xAxis:{type:'category',boundaryGap:false,data:days,axisLabel:AX,axisLine:{lineStyle:{color:'#E3EBF3'}},axisTick:{show:false},name:'Days',nameTextStyle:{color:'#8296AB',fontSize:10}},
+    yAxis:{type:'value',min:96.5,max:100,axisLabel:{formatter:'{value}%',color:'#8296AB',fontSize:10},splitLine:SP},
+    series:[
+      {name:'HUAXIN HX-SW',type:'line',smooth:true,symbol:'none',data:hx,lineStyle:{width:3,color:'#00BFA5'},itemStyle:{color:'#00BFA5'},
+       areaStyle:{color:{type:'linear',x:0,y:0,x2:0,y2:1,colorStops:[{offset:0,color:'rgba(0,191,165,.20)'},{offset:1,color:'rgba(0,191,165,0)'}]}},
+       markLine:{silent:true,symbol:'none',lineStyle:{color:'#E5484D',type:'dashed',width:1},label:{formatter:'98% operating standard',color:'#E5484D',fontSize:10,position:'insideEndTop'},data:[{yAxis:98}]}},
+      {name:'Reference membrane',type:'line',smooth:true,symbol:'none',data:ref,lineStyle:{width:2,color:'#94A3B8',type:'dashed'},itemStyle:{color:'#94A3B8'}}
+    ]});
+
+
+  
+ /* B — scale accumulation: Δ weight only */
+  mk('chB',{
+    grid:{left:56,right:20,top:36,bottom:28},
+    tooltip:{trigger:'item',
+      formatter:p=>'<b>'+p.name+'</b><br/>'+p.data.detail+'<br/>Weight gained: <b>+'+p.value+' kg</b>'},
+    xAxis:{type:'category',data:['HUAXIN HX-SW','Reference membrane'],
+      axisLabel:{color:'#5B7188',fontSize:11},
+      axisLine:{lineStyle:{color:'#E3EBF3'}},axisTick:{show:false}},
+    yAxis:{type:'value',min:0,max:25,
+      axisLabel:{color:'#8296AB',fontSize:10,formatter:function(v){return v===0?'0 kg':'+'+v+' kg';}},
+      splitLine:SP},
+    series:[{
+      name:'Δ weight after 525 days',type:'bar',barWidth:'32%',
+      data:[
+        {value:0.8,detail:'15.3 kg → 16.1 kg',
+         itemStyle:{color:'#00BFA5',borderRadius:[6,6,0,0]},
+         label:{show:true,position:'top',fontWeight:700,fontSize:13,color:'#0B7C6C',
+                formatter:'+0.8 kg\n{tag|≈28× less fouling retained}',lineHeight:19,
+                rich:{tag:{fontSize:11,fontWeight:600,color:'#0B7C6C'}}}},
+        {value:22.4,detail:'15.2 kg → 37.6 kg',
+         itemStyle:{color:'#C0392B',borderRadius:[6,6,0,0],opacity:.85},
+         label:{show:true,position:'top',formatter:'+22.4 kg',fontWeight:700,fontSize:13,color:'#C0392B'}}
+      ]
+    }]
+  });
+
+
+
+
+  /* C — permeate conductivity floating bars */
+  mk('chC',{
+    grid:{left:54,right:16,top:30,bottom:28},
+    tooltip:{trigger:'axis',formatter:ps=>['HUAXIN HX-SW: 55–164 µS/cm','Reference: 172–564 µS/cm'][ps[0].dataIndex]},
+    xAxis:{type:'category',data:['HUAXIN HX-SW','Reference'],axisLabel:{color:'#5B7188',fontSize:11},axisLine:{lineStyle:{color:'#E3EBF3'}},axisTick:{show:false}},
+    yAxis:{type:'value',min:0,max:620,axisLabel:{color:'#8296AB',fontSize:10},splitLine:SP,name:'µS/cm',nameTextStyle:{color:'#8296AB',fontSize:10}},
+    series:[
+      {name:'base',type:'bar',stack:'c',barWidth:'34%',itemStyle:{color:'transparent'},data:[55,172],tooltip:{show:false}},
+      {name:'range',type:'bar',stack:'c',barWidth:'34%',data:[{value:109,itemStyle:{color:'#00BFA5',borderRadius:[6,6,6,6]}},{value:392,itemStyle:{color:'#94A3B8',borderRadius:[6,6,6,6]}}],
+       label:{show:true,position:'top',fontWeight:700,color:'#0F2239',fontSize:11.5,formatter:p=>['55–164 µS/cm','172–564 µS/cm'][p.dataIndex]}}
+    ]});
+}
+let chartsInited=false;
+const perfObs=new IntersectionObserver(es=>es.forEach(e=>{
+  if(e.isIntersecting&&!chartsInited){
+    chartsInited=true; perfObs.disconnect();
+    if(typeof echarts!=='undefined')initCharts();
+    else{let n=0;const t=setInterval(()=>{if(typeof echarts!=='undefined'||++n>40){clearInterval(t);if(typeof echarts!=='undefined')initCharts();}},250);}
+  }
+}),{threshold:.15});
+perfObs.observe(document.getElementById('performance'));
+</script>
+</body>
+</html>
